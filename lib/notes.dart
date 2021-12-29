@@ -21,6 +21,22 @@
         ),
 */
 
+/* Another method for changing primary and secondary color theme from discord channel by @Jay
+
+MaterialApp(
+  theme: ThemeData(
+    colorScheme: ColorScheme.light(
+      primary: const Color(0xFF0A0E21),
+    ),
+  ),
+  darkTheme: ThemeData(
+    colorScheme: ColorScheme.dark(
+      primary: const Color(0xFF303030),
+    ),
+  ),
+)
+*/
+
 /* Keep floating action button customization (on a single page here) for reference purpose
 
       floatingActionButton: Theme(
@@ -37,4 +53,21 @@
           ),
         ),
       ),
+*/
+
+/* Initial slider widget before further theme customization:
+
+Slider(
+  value: height.toDouble(),
+  min: 120.0,
+  max: 220.0,
+  activeColor: kBottomContainerColor,
+  inactiveColor: Color(0xFF8D8E98),
+  onChanged: (double newValue) {
+    setState(() {
+      height = newValue.round();
+    });
+  },
+),
+
 */

@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
-
-const TextStyle genderTextStyle = TextStyle(
-  fontSize: 18.0,
-  color: Color(0xFF8D8E98),
-);
+import 'package:bmi_calculator/constants.dart';
 
 class IconContent extends StatelessWidget {
-  IconContent({this.gender, this.genderIcon});
+  IconContent({this.label, this.icon});
 
-  final String gender;
-  final IconData genderIcon;
+  final String label;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -17,15 +13,15 @@ class IconContent extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Icon(
-          genderIcon,
+          icon,
           size: 80.0,
         ),
         SizedBox(
           height: 15.0,
         ),
         Text(
-          '$gender',
-          style: genderTextStyle,
+          '$label',
+          style: kLabelTextStyle,
         ),
       ],
     );
